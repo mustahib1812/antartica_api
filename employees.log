@@ -1,0 +1,4 @@
+2020-12-16 19:57:32,861 employees    ERROR    module 'antartica_backend.common.messages' has no attribute 'USER_NOT_FOUND'
+2020-12-16 19:59:43,643 employees    ERROR    name 'data' is not defined
+2020-12-16 20:00:11,054 employees    ERROR    module 'antartica_backend.common.messages' has no attribute 'PASSWORD_INVALID'
+2020-12-16 20:07:31,094 employees    ERROR    name 'user_type' is not defined
