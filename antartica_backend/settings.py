@@ -74,11 +74,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'antartica_backend.wsgi.application'
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': (
+    'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
-    ),
+    ],
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'antartica_backend.authentication.SafeJWTAuthentication'
+        'antartica_backend.authentication.SafeJWTAuthentication',
     ),
 }
 

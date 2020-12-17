@@ -22,4 +22,5 @@ urlpatterns = [
     path('api/register',register.Register.as_view(),name="register"),
     path('api/login',login.Login.as_view(),name="login"),
     path('api/employees',employee.Employee.as_view(),name="employee"),
+    path('api/employees/<int:employee_id>', employee.Employee.as_view(),name='employee'),
 ]

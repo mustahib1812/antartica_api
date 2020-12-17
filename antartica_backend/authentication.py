@@ -34,10 +34,9 @@ class SafeJWTAuthentication(BaseAuthentication):
                             algorithms=['HS256'])
                 
                 
-                user_type= payload.get('type')
 
-                user = get_user_object(user_id = payload.get('user_id'),
-                user_type=user_type)
+                user = get_raw_employee(id=payload.get('user_id'))
+                
                 
                 if user:
                     return (user, None)
